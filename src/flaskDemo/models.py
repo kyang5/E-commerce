@@ -29,3 +29,21 @@ class Post(db.Model):
 
     def __repr__(self):
         return f"Post('{self.title}', '{self.date_posted}')"
+    
+class Customer_T(db.Model):
+    __table__ = db.Model.metadata.tables['customer_t']
+
+class Order_T(db.Model):
+    __table__ = db.Model.metadata.tables['order_t']
+
+class Product_T(db.Model):
+    __table__ = db.Model.metadata.tables['product_t']
+
+class OrderLine_T(db.Model):
+    __table__ = db.Model.metadata.tables['orderLine_t']
+
+class BillingAddress_T(db.Model):
+    __table__ = db.Model.metadata.tables['billingAddress_t']
+
+class ShippingAddress_T(db.Model):
+    __table__ = db.Model.metadata.tables['shippingAddress_t']
