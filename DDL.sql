@@ -4,6 +4,7 @@ CustomerName VARCHAR(40) NOT NULL,
 CustomerEmail VARCHAR(80) NOT NULL,
 CustomerPassword VARCHAR(20) NOT NULL,
 CustomerPhoneNumber NUMERIC(11) NOT NULL,
+Role VARCHAR(40) NOT NULL,
 CONSTRAINT Customer_PK PRIMARY KEY (CustomerID));
 
 CREATE TABLE Order_T
